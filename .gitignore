@@ -1,0 +1,39 @@
+# Ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/examples.txt
+/spec/reports/
+/spec/tmp/
+*.coverprofile
+
+# Bundler
+.bundle
+vendor/bundle
+
+# Test artifacts
+/test-results/
+/rspec-report.html
+/coverage/
+
+# Screenshots and videos (from Capybara)
+/tmp/screenshots/
+/tmp/capybara/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo

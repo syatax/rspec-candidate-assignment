@@ -1,0 +1,32 @@
+{
+  "name": "RSpec Assignment - Candidate",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/google-chrome:1": {}
+  },
+  
+  "onCreateCommand": "rbenv local 3.2.0 && bundle install",
+  
+  "postCreateCommand": "echo 'Ready for Ruby RSpec testing with SitePrism + Capybara + Chrome!' && ruby --version && bundle exec rspec --version",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rebornix.Ruby",
+        "castwide.solargraph",
+        "connorshea.vscode-ruby-test-adapter",
+        "ms-vscode.test-adapter-converter",
+        "hbenl.vscode-test-explorer"
+      ],
+      "settings": {
+        "ruby.intellisense": "rubyLanguageServer",
+        "ruby.format": "rubocop",
+        "solargraph.diagnostics": true
+      }
+    }
+  },
+  
+  "forwardPorts": [],
+  "remoteUser": "vscode"
+}
