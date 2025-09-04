@@ -1,0 +1,20 @@
+plugins:
+  - rubocop-capybara
+
+require:
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.0
+  NewCops: enable
+
+RSpec:
+  Enabled: true
+
+Capybara:
+  Enabled: true
+
+# You can customize rules below as needed
+# For example:
+# Layout/LineLength:
+#   Max: 120
